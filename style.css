@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fffeff;
+  color: #b49a9a;
+}
+
+/* *,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+} */
+
+.container-navbar {
+  background-color: rgb(224, 125, 166);
+  width: 100%;
+  height: 10vh;
+}
+
+.ul-navbar {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: left;
+}
+
+.li-navbar {
+  list-style-type: none;
+  padding: 20px;
+  margin: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+.li-navbar .a-navbar:hover {
+  color: #fffeff;
+}
+
+.li-navbar .a-navbar::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #fffeff;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.li-navbar .a-navbar:hover::after {
+  transform: scaleX(0.5);
+}
+
+.a-navbar {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.container-content {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.a-content {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  width: 720px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 80px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.a-content p:hover {
+  color: #ff00ff;
+}
+
+.a-content p::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #ff00ff;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.a-content p:hover::after {
+  transform: scaleX(0.5);
+}
+
+.img-content {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.container-footer {
+  height: 10vh;
+  background-color: rgb(255, 139, 205);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1-footer {
+  font-size: 40px;
+  color: white;
+}
+
+/* media queries */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
+}
